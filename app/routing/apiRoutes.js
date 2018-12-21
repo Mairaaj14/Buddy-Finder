@@ -58,14 +58,4 @@ module.exports = function(app) {
 		// Send appropriate response
 		res.json({status: 'OK', matchName: matchName, matchPhoto: matchPhoto});
 	});
-};//API Routes
-// A GET route with the url /api/friends which will be used to display a JSON of all possible friends.
-
-app.get("/api/friends", function(req, res) {
-    return res.json(friends);
-});
-
-// A POST routes with url /api/friends which will be used to handle incoming survey results.
-//Route will also be used to handle the compability logic.
-
-app.post("api/friends")
+};
